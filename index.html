@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Insurance Page</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick JS -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="top-header side-space">
+            <div class="top-links">
+                <div class="group-1">
+                    <a class="right-border" href="tel: 1800 2666"><img src="./assets/imgs/phone.png" alt="">1800
+                        2666</a>
+                    <a class="right-border" href="#"><img src="./assets/imgs/tel.png" alt="">Call Back</a>
+                    <a class="live-chat"><img src="./assets/imgs/Oval.png" alt="">Live Chat</a>
+                </div>
+            </div>
+        </div>
+        <div class="side-space main-header">
+            <div class="logo">
+                <img src="./assets/imgs/logo-new.png" alt="ICICI Lombard">
+            </div>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Car Insurance</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">Car Insurance 1</a></li>
+                            <li><a href="">Car Insurance 2</a></li>
+                            <li><a href="">Car Insurance 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Two Wheeler Insurance</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">Two Wheeler Insurance 1</a></li>
+                            <li><a href="">Two Wheeler Insurance 2</a></li>
+                            <li><a href="">Two Wheeler Insurance 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Health Insurance</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">Health Insurance 1</a></li>
+                            <li><a href="">Health Insurance 2</a></li>
+                            <li><a href="">Health Insurance 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle">Travel Insurance</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">Travel Insurance 1</a></li>
+                            <li><a href="">Travel Insurance 2</a></li>
+                            <li><a href="">Travel Insurance 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle">Other Insurance</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">Other Insurance 1</a></li>
+                            <li><a href="">Other Insurance 2</a></li>
+                            <li><a href="">Other Insurance 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Claims</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">Claims 1</a></li>
+                            <li><a href="">Claims 2</a></li>
+                            <li><a href="">Claims 3</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="login">
+                        <a href="#" class="button white">Login</a>
+                    </li>
+
+                </ul>
+                <button class="menu-toggle">
+                    ☰
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="side-space">
+            <div class="banner">
+                <div class="d-flex desk-row">
+                    <div class="banner-text d-flex desk-row">
+                        <div class="text-left">
+                            <h1 class="h1 heading">Two Wheeler insurance</h1>
+                            <h2 class="h2 subheading">Prices starting at just ₹2,094/yr</h2>
+                            <p class="banner-text">This amount refers to the TP rates only</p>
+
+                            <div class="banner-form">
+                                <form id="formValidation">
+
+                                    <div class="fields">
+                                        <div class="group">
+                                            <label for="carRegistration" class="label">Car Registration Number:</label>
+                                            <input type="text" id="carRegistration" class="input" name="carRegistration"
+                                                placeholder="Car Registration Number:" />
+                                            <small class="error" id="carRegistrationError"></small>
+                                        </div>
+
+                                        <div class="group">
+                                            <label for="mobileNumber">Mobile Number:</label>
+                                            <input type="tel" id="mobileNumber" name="mobileNumber"
+                                                placeholder="Mobile no." />
+                                            <small class="error" id="mobileNumberError"></small>
+                                        </div>
+
+                                        <div class="group">
+                                            <label for="emailAddress">Email:</label>
+                                            <input type="email" id="emailAddress" name="emailAddress"
+                                                placeholder="Email" />
+                                            <small class="error" id="emailAddressError"></small>
+                                        </div>
+
+                                        <div class="submit-grp">
+                                            <button type="submit" class="button">Get quote</button>
+                                            <a href="#" class="retrieve-quote">Retrieve quote</a>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="terms" required>
+                                        <label for="terms">I agree to the <a href="#">terms and conditions</a></label>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+
+                        <div class="banner-image">
+                            <img src="./assets/imgs/two wheeler illustrate.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-1">
+        <div class="side-space padd">
+            <h1 class="h1 text-center">
+                Why our customers love us?
+            </h1>
+            <p class="text-center">And, we think you will too.</p>
+
+            <div class="services">
+                <div class="service-box">
+                    <img src="./assets/imgs/Group 1000005588.png" alt="">
+                    <p class="blue text-center">Extensive Coverage Options</p>
+                    <p class="text-center">Choose from Third Party (TP) or Comprehensive plans tailored to your needs.
+                    </p>
+                </div>
+                <div class="service-box">
+                    <img src="./assets/imgs/Group 1000005589.png" alt="">
+                    <p class="blue text-center">Instant Policy Issuance</p>
+                    <p class="text-center">Buy or renew your policy online in minutes—no paperwork needed!</p>
+                </div>
+                <div class="service-box">
+                    <img src="./assets/imgs/Group 1000005591.png" alt="">
+                    <p class="blue text-center">Wide Network of Garages</p>
+                    <p class="text-center">Access cashless repairs at an extensive network of trusted service centers.
+                    </p>
+                </div>
+                <div class="service-box">
+                    <img src="./assets/imgs/Group 1000005588 (1).png" alt="">
+                    <p class="blue text-center">Hassle-Free Claims</p>
+                    <p class="text-center">Quick and smooth claim settlement to get you back on the road without delays.
+                    </p>
+                </div>
+                <div class="service-box">
+                    <img src="./assets/imgs/Group 1000005588 (2).png" alt="">
+                    <p class="blue text-center">Dedicated Support</p>
+                    <p class="text-center">Our expert team is always ready to assist you at every step.</p>
+                </div>
+            </div>
+
+            <div class="policy-slider" style="display: none;">
+
+                <div class="slider">
+                    <div>
+                        <div class="d-flex desk-row">
+                            <div class="slider-img">
+                                <img src="./imgs/slider-img.png" alt="">
+                            </div>
+                            <div class="slider-text">
+                                <p><strong>Comprehensive car insurance policy</strong></p>
+                                <p>Comprehensive car insurance, also known as a private car package policy, is a type of
+                                    auto insurance that provides complete coverage for your vehicle. It is an optional
+                                    car insurance policy but is highly recommended for car owners who want the best
+                                    protection for their four-wheelers.</p>
+                                <p>Comprehensive car insurance covers damage caused by natural disasters, accidents,
+                                    theft, fire, and other such incidents. It covers damages to both your vehicle and
+                                    third-party vehicles and property. This car insurance policy also covers third-party
+                                    liabilities, which will cover any legal costs or compensation you may be liable for
+                                    in case of an accident caused due to your fault. In addition, some comprehensive
+                                    policies also offer additional benefits such as roadside assistance, towing service
+                                    and more. Even though comprehensive insurance policies tend to be more expensive
+                                    than Third-Party Liability or Standalone Own Damage policies, but they offer broader
+                                    coverage.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="d-flex desk-row">
+                            <div class="slider-img">
+                                <img src="./imgs/slider-img.png" alt="">
+                            </div>
+                            <div class="slider-text">
+                                <p><strong>Comprehensive car insurance policy 2</strong></p>
+                                <p>Comprehensive car insurance, also known as a private car package policy, is a type of
+                                    auto insurance that provides complete coverage for your vehicle. It is an optional
+                                    car insurance policy but is highly recommended for car owners who want the best
+                                    protection for their four-wheelers.</p>
+                                <p>Comprehensive car insurance covers damage caused by natural disasters, accidents,
+                                    theft, fire, and other such incidents. It covers damages to both your vehicle and
+                                    third-party vehicles and property. This car insurance policy also covers third-party
+                                    liabilities, which will cover any legal costs or compensation you may be liable for
+                                    in case of an accident caused due to your fault. In addition, some comprehensive
+                                    policies also offer additional benefits such as roadside assistance, towing service
+                                    and more. Even though comprehensive insurance policies tend to be more expensive
+                                    than Third-Party Liability or Standalone Own Damage policies, but they offer broader
+                                    coverage.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="d-flex desk-row">
+                            <div class="slider-img">
+                                <img src="./imgs/slider-img.png" alt="">
+                            </div>
+                            <div class="slider-text">
+                                <p><strong>Comprehensive car insurance policy 3</strong></p>
+                                <p>Comprehensive car insurance, also known as a private car package policy, is a type of
+                                    auto insurance that provides complete coverage for your vehicle. It is an optional
+                                    car insurance policy but is highly recommended for car owners who want the best
+                                    protection for their four-wheelers.</p>
+                                <p>Comprehensive car insurance covers damage caused by natural disasters, accidents,
+                                    theft, fire, and other such incidents. It covers damages to both your vehicle and
+                                    third-party vehicles and property. This car insurance policy also covers third-party
+                                    liabilities, which will cover any legal costs or compensation you may be liable for
+                                    in case of an accident caused due to your fault. In addition, some comprehensive
+                                    policies also offer additional benefits such as roadside assistance, towing service
+                                    and more. Even though comprehensive insurance policies tend to be more expensive
+                                    than Third-Party Liability or Standalone Own Damage policies, but they offer broader
+                                    coverage.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-2">
+        <div class="side-space padd">
+            <div class="d-flex desk-row">
+                <img class="image-side" src="./assets/imgs/image.png" alt="">
+                <div class="text-side">
+                    <h1 class="h1">What is Two Wheeler Insurance?</h1>
+                    <p>Two-wheeler insurance is a type of motor vehicle insurance designed specifically for motorcycles,
+                        scooters, and other two-wheelers. It provides financial protection against potential risks such
+                        as accidents, theft, natural disasters, and third-party liabilities. In India, having at least a
+                        basic Third-Party Liability insurance policy is legally mandatory under the Motor Vehicles Act,
+                        1988.</p>
+                    <div class="d-flex row">
+                        <img class="scooty-img" src="./assets/imgs/pepicons-print_handshake.png" alt="">
+                        <div>
+                            <p class="blue">Third-Party Insurance</p>
+                            <ul>
+                                <li>Covers damages caused to another person’s property, vehicle, or injuries to a third
+                                    party.</li>
+                                <li>Mandatory by law but does not cover damage to your own vehicle.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="d-flex row">
+                        <img class="scooty-img" src="./assets/imgs/Icons/solar_shield-broken.png" alt="">
+                        <div>
+                            <p class="blue">Comprehensive Insurance</p>
+                            <ul>
+                                <li>Covers both third-party liabilities and damages to your own two-wheeler due to
+                                    accidents, theft, fire, or natural calamities.
+                                </li>
+                                <li>Offers optional add-ons for enhanced protection.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="d-flex row">
+                        <img class="scooty-img" src="./assets/imgs/ri_motorbike-fill.png" alt="">
+                        <div>
+                            <p class="blue">Standalone Own Damage Cover</p>
+                            <ul>
+                                <li>Covers only the damages to your own vehicle, without third-party coverage.
+                                </li>
+                                <li>Ideal for those who already have a valid third-party policy.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-3">
+        <div class="side-space padd">
+            <h1 class="h1 text-center">
+                Key Feature Of Two Wheeler Insurance
+            </h1>
+            <div class="d-flex desk-row">
+                <div class="feature">
+                    <div class="d-flex row">
+                        <img src="./assets/imgs/key/1.png" alt="">
+                        <p class="blue">Financial Security</p>
+                    </div>
+                    <p>Reduces out-of-pocket expenses during unforeseen events.</p>
+                </div>
+                <div class="feature">
+                    <div class="d-flex row">
+                        <img src="./assets/imgs/key/2.png" alt="">
+                        <p class="blue">Coverage Options</p>
+                    </div>
+                    <p>Flexible plans to suit different budgets and needs.</p>
+                </div>
+                <div class="feature">
+                    <div class="d-flex row">
+                        <img src="./assets/imgs/key/3.png" alt="">
+                        <p class="blue">Legal Compliance</p>
+                    </div>
+                    <p>Ensures you meet the legal requirements for riding on the road.</p>
+                </div>
+                <div class="feature">
+                    <div class="d-flex row">
+                        <img src="./assets/imgs/key/4.png" alt="">
+                        <p class="blue">Add-Ons</p>
+                    </div>
+                    <p>Includes options like zero depreciation, roadside assistance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-4">
+        <div class="side-space">
+            <h1 class="h1">Things to keep in mind while buying <br class="desktop"> a two wheeler insurance policy </h1>
+
+            <div class="things">
+                <div class="thing">
+                    <div class="d-flex">
+                        <img src="./assets/imgs/Icons/1.png" alt="">
+                        <div>
+                            <p class="blue">Coverage Type</p>
+                            <p>Decide between Third-Party Insurance (mandatory by law) or Comprehensive Insurance (for
+                                better
+                                protection, including own damages).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="thing">
+                    <div class="d-flex">
+                        <img src="./assets/imgs/Icons/2.png" alt="">
+                        <div>
+                            <p class="blue">Add-Ons and Riders</p>
+                            <p>Look for useful add-ons like zero depreciation, roadside assistance, engine protection,
+                                and
+                                personal accident cover.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="thing">
+                    <div class="d-flex">
+                        <img src="./assets/imgs/Icons/3.png" alt="">
+                        <div>
+                            <p class="blue">Insured Declared Value (IDV)</p>
+                            <p>Check the IDV, as it determines the maximum claim amount in case of total loss or
+                                theft.
+                                Choose an appropriate IDV to balance coverage and premiums.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="thing">
+                    <div class="d-flex">
+                        <img src="./assets/imgs/Icons/4.png" alt="">
+                        <div>
+                            <p class="blue">Policy Duration</p>
+                            <p>Consider long-term policies (up to 3 years) to avoid annual renewals and enjoy
+                                discounts.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="thing">
+                    <div class="d-flex">
+                        <img src="./assets/imgs/Icons/5.png" alt="">
+                        <div>
+                            <p class="blue">Premium Amount</p>
+                            <p>Compare premiums from multiple providers. Ensure the premium aligns with the
+                                features and benefits offered.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="thing">
+                    <div class="d-flex">
+                        <img src="./assets/imgs/Icons/6.png" alt="">
+                        <div>
+                            <p class="blue"> Exclusions</p>
+                            <p>Read the policy terms to understand what’s not covered, such as normal
+                                wear and tear or illegal usage.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="thing">
+                    <div class="d-flex">
+                        <img src="./assets/imgs/Icons/7.png" alt="">
+                        <div>
+                            <p class="blue">Claim Settlement Ratio</p>
+                            <p>Check the insurer's claim settlement ratio to assess their
+                                reliability in processing claims quickly and efficiently.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="thing">
+                    <div class="d-flex">
+                        <img src="./assets/imgs/Icons/8.png" alt="">
+                        <div>
+                            <p class="blue">Customer Support</p>
+                            <p>Ensure the insurer provides 24/7 customer assistance for queries
+                                or emergencies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-5">
+        <div class="side-space">
+            <h1 class="h1 text-center white">Why You Should Buy Two Wheeler <br class="desktop"> Insurance Online </h1>
+        </div>
+
+        <div class="d-flex desk-row">
+            <img src="./assets/imgs/two wheeler insurance mobile view.png" alt="" class="mobile">
+            <div class="online">
+                <ul class="online-list">
+                    <li>
+                        <p class="arw"><strong>Instant online policy on email</strong></p>
+                        <p>Get the convenience of receiving your policy instantly via email. This seamless process
+                            ensures immediate access to your coverage without any delays. Just fill in details about
+                            yourself and your bike, make the payment, and you are done.</p>
+                    </li>
+                    <li>
+                        <p class="arw"><strong>Instant online policy on email</strong></p>
+                        <p>Get the convenience of receiving your policy instantly via email. This seamless process
+                            ensures immediate access to your coverage without any delays. Just fill in details about
+                            yourself and your bike, make the payment, and you are done.</p>
+                    </li>
+                    <li>
+                        <p class="arw"><strong>Instant online policy on email</strong></p>
+                        <p>Get the convenience of receiving your policy instantly via email. This seamless process
+                            ensures immediate access to your coverage without any delays. Just fill in details about
+                            yourself and your bike, make the payment, and you are done.</p>
+                    </li>
+                    <li>
+                        <p class="arw"><strong>Instant online policy on email</strong></p>
+                        <p>Get the convenience of receiving your policy instantly via email. This seamless process
+                            ensures immediate access to your coverage without any delays. Just fill in details about
+                            yourself and your bike, make the payment, and you are done.</p>
+                    </li>
+                    <li>
+                        <p class="arw"><strong>Instant online policy on email</strong></p>
+                        <p>Get the convenience of receiving your policy instantly via email. This seamless process
+                            ensures immediate access to your coverage without any delays. Just fill in details about
+                            yourself and your bike, make the payment, and you are done.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-6">
+        <div class="d-flex desk-row">
+            <img src="./assets/imgs/man with bike img.png" alt="">
+            <!-- <div class="half-img"></div> -->
+            <div class="blue-half">
+                <h1 class="h1 white">Reason to buy bike insurance Online</h1>
+                <div class="bike-grid">
+                    <div class="bike-child">
+                        <p class="bike-num">01</p>
+                        <p class="white"><strong>Convenience</strong></p>
+                        <p class="white">Compare different plans and purchase insurance at your comfort</p>
+                    </div>
+                    <div class="bike-child">
+                        <p class="bike-num">02</p>
+                        <p class="white"><strong>24X7 availability</strong></p>
+                        <p class="white">Buy anytime, any day from anywhere</p>
+                    </div>
+                    <div class="bike-child">
+                        <p class="bike-num">03</p>
+                        <p class="white"><strong>Quick process</strong></p>
+                        <p class="white">Usually faster than traditional methods, where you can complete the process
+                            in just a few
+                            clicks</p>
+                    </div>
+                    <div class="bike-child">
+                        <p class="bike-num">04</p>
+                        <p class="white"><strong>User-friendly tools</strong></p>
+                        <p class="white">Get calculators and tools to understand the coverage needed and the costs
+                        </p>
+                    </div>
+                    <div class="bike-child">
+                        <p class="bike-num">05</p>
+                        <p class="white"><strong>Instant policy issuance</strong></p>
+                        <p class="white">Get policy documents immediately upon premium payment</p>
+                    </div>
+                </div>
+                <a href="#" class="button">Apply Now
+                    <img src="./assets/imgs/btn-icn.png" alt="" width="18">
+                </a>
+            </div>
+    </section>
+
+    <section class="section-7">
+        <div class="side-space">
+            <h1 class="h1">How to choose the right car <br class="desktop"> insurance policy online?</h1>
+
+            <div class="ten-grid">
+                <div class="policy">
+                    <h2 class="blue"><span>1</span> Understand Your Requirements</h2>
+                    <p>Decide whether you need Third-Party Insurance (mandatory) or Comprehensive Insurance (covers both
+                        third-party liabilities and own damages).</p>
+                </div>
+                <div class="policy">
+                    <h2 class="blue"><span>2</span> Compare Multiple Insurers</h2>
+                    <p>Decide whether you need Third-Party Insurance (mandatory) or Comprehensive Insurance (covers both
+                        third-party liabilities and own damages).</p>
+                </div>
+                <div class="policy">
+                    <h2 class="blue"><span>3</span> Check the Insurer’s Reputation</h2>
+                    <p>Review the Claim Settlement Ratio (CSR) to assess reliability.
+                        Read customer reviews about claim processing and overall service quality.</p>
+                </div>
+                <div class="policy">
+                    <h2 class="blue"><span>4</span> Consider Add-Ons for Extra Coverage</h2>
+                    <p>Add-ons can enhance your protection, such as Zero Depreciation Cover,Roadside Assistance,Engine
+                        Protection Cover</p>
+                </div>
+                <div class="policy">
+                    <h2 class="blue"><span>5</span> Verify Cashless Garage Network</h2>
+                    <p>Ensure the insurer has a wide network of cashless garages near your area for seamless repairs.
+                    </p>
+                </div>
+                <div class="policy">
+                    <h2 class="blue"><span>6</span> Look for Discounts</h2>
+                    <p>Check for No Claim Bonus (NCB) discounts if you haven’t made claims in previous years.Explore
+                        long-term policy options for additional savings.</p>
+                </div>
+                <div class="policy">
+                    <h2 class="blue"><span>7</span> Review Policy Terms and Conditions</h2>
+                    <p>Carefully read the inclusions and exclusions to avoid surprises during claims.Confirm coverage
+                        for natural disasters, theft, and personal accident coverage.</p>
+                </div>
+                <div class="policy">
+                    <h2 class="blue"><span>8</span> Opt for a Digital-Friendly Insurer</h2>
+                    <p>Choose an insurer offering online policy issuance, easy renewal processes, and a user-friendly
+                        app/website.</p>
+                </div>
+                <div class="policy">
+                    <h2 class="blue"><span>9</span> Customer Support</h2>
+                    <p>Ensure the insurer provides 24/7 customer assistance for any queries or emergencies.</p>
+                </div>
+                <div class="policy">
+                    <h2 class="blue"><span>10</span> Finalize and Purchase</h2>
+                    <p>After comparing and evaluating, select the policy that meets your needs and budget.Purchase
+                        securely through the insurer’s official website or a trusted aggregator.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="side-space">
+            <div class="d-flex desk-row">
+                <div class="footer-left">
+                    <img src="./assets/imgs/footer-logo.png" alt="">
+                    <h4>
+                        InvestSphere Company Limited,
+                    </h4>
+                    <p>
+                        House No. 25, Green Meadows ColonySector 10, Rajendra Nagar Jaipur, Rajasthan,Pin Code: 302017
+                    </p>
+                    <p>
+                        Email: customersupport@icicilombard.com
+                    </p>
+                    <p>
+                        Fax no - 022 61961323
+                    </p>
+                    <div class="social-media">
+                        <div class="d-flex row">
+                            <a href="#">
+                                <img src="./imgs/facebook.png" alt="facebook">
+                            </a>
+                            <a href="#">
+                                <img src="./imgs/linked-in.png" alt="linkedIn">
+                            </a>
+                            <a href="#">
+                                <img src="./imgs/twitter.png" alt="twitter">
+                            </a>
+                            <a href="#">
+                                <img src="./imgs/you-tube.png" alt="You Tube">
+                            </a>
+                            <a href="#">
+                                <img src="./imgs/insta.png" alt="Instagram">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-right">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    </p>
+                    <p>
+                        QuickLinks
+                    </p>
+                    <a href="/">Home>></a> <a href="#">Car Insurance</a> | <a href="#">TwoWheeler Insurance</a> | <a
+                        href="#">Health Insurance</a> | <a href="#">Travel Insurance</a> | <a href="#">Other
+                        Insurance</a> | <a href="#">Claims</a>
+
+                    <div class="companies">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+    <!-- slick javascript cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+</body>
+
+</html>
