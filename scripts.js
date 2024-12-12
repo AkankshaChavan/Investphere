@@ -105,6 +105,28 @@ emailAddress.addEventListener("input", () => {
 
 
 
+// const question = document.querySelector(".question");
+// const answer = document.querySelector(".answer");
+
+// question.addEventListener("click", ()=>{
+//     answer.classList.toggle(".show")
+// });
+
+
+ const accordions = document.querySelectorAll('.question');
+
+ accordions.forEach(acc => {
+     acc.addEventListener('click', function() {
+         const answer = this.nextElementSibling;
+
+         answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+     });
+
+     const answer = acc.nextElementSibling;
+     answer.style.display = 'block';
+ });
+
+
 $(document).ready(function () {
     $('.slider').slick({
         infinite: true,
